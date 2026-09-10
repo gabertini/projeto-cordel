@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Passion One';
+    src: url(fontes/Passion_One/PassionOne-Bold.ttf) format('truetype'); 
+}
+@font-face {
+    font-family: 'Sriracha';
+    src: url(fontes/Sriracha/Sriracha-Regular.ttf) format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+    display: block;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;  
+    padding-bottom: 0.1em;  
+}
+header h1 {
+    font-family: var(--fonte2);
+    font-variant: small-caps;
+    padding-top: 50px;
+    font-size: 10vw;
+
+}
+header p {
+    padding-bottom: 50px; 
+    font-family: var(--fonte1);
+}
+header > p > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+header > p > a:hover {
+    text-decoration: underline;
+}
+
+p {
+    display: block;  
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate; 
+}
+
+section {
+    display: block;
+    font-family: var(--fonte3);
+    padding: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+
+section.imagem {
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgb(0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1px;
+    font-family: var(--fonte1);
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
